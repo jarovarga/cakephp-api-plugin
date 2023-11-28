@@ -1,0 +1,48 @@
+{
+    "name": "jarovarga/cakephp-api-plugin",
+    "description": "CakePHP API plugin",
+    "type": "cakephp-plugin",
+    "keywords": [
+        "cakephp",
+        "api",
+        "plugin",
+        "jwt",
+        "authentication"
+    ],
+    "license": "ISC License (ISC)",
+    "authors": [
+        {
+            "name": "Jaro Varga",
+            "email": "jaro.varga@neio.sk",
+            "role": "author"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "cakephp/authentication": "^2.9",
+        "cakephp/cakephp": "^4.4",
+        "firebase/php-jwt": "^6.3"
+    },
+    "require-dev": {
+        "cakephp/cakephp-codesniffer": "^5.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Api\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Api\\Test\\": "tests/"
+        }
+    },
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
